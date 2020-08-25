@@ -36,9 +36,9 @@ bot.telegram.setWebhook(`${URL}/bot${BOT_TOKEN}`);
 bot.startWebhook(`/bot${BOT_TOKEN}`, null, PORT);
 console.log('Started with webhook');
 
-	// bot.launch()
-	// .then(res =>{
-	// 	const date = new Date();
-	// 	console.log('Bot launched at ${date}');
-	// }).catch(err=> console.log(err));
-	// //launch
+	bot.launch()
+	.then(res =>{
+		const date = new Date();
+		console.log('Bot launched at ${date}');
+	}).catch(err=> console.log(err));
+	//launch
