@@ -1,0 +1,21 @@
+{
+  "name": "CovidBot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "country-emoji": "^1.5.4",
+    "dotenv": "^8.2.0",
+    "telegraf": "^3.38.0"
+  },
+  "engines": {
+    "node": "12.x"
+  }
+}
