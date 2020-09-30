@@ -15,10 +15,11 @@ You need to send a name of your Country
 	`));
 bot.help(ctx => ctx.reply(`
 Example:
+Kyrgyzstan
 Ukraine
 Russia
 China
-Kyrgyzstan
+USA
 	`));
 
 	//handlers
@@ -26,7 +27,10 @@ Kyrgyzstan
 		const {data} = await covidService.getByCountry(ctx.message.text)
 
 		if(data && data.results === 0){
-			return ctx.reply('Country not found. Try another');
+			return ctx.reply(`
+Country not found. Try another 
+for example: Kyrgyzstan
+			`);
 		}
 		return ctx.replyWithMarkdown(formatCountryMsg(data.response[0]));
 	});
