@@ -3,11 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://adisync.github.io/node.js_telegram_bot/",
   "scripts": {
-    "start": "node src/index.js",
-    "deploy": "gh-pages -d src",
-    "predeploy": "npm run start"
+    "start": "node src/index.js"
   },
   "keywords": [],
   "author": "",
